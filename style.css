@@ -1,0 +1,73 @@
+/* Google fonts import link
+
+https://fonts.google.com/specimen/Source+Serif+Pro?hl=RU&subset=cyrillic 
+
+CSS rules to specify families
+
+font-family: 'Source Serif Pro', serif; 
+
+Extra-light 200; Extra-light 200 italic; Light 300; Light 300 italic; Regular 400; Regular 400 italic; Semi-bold 600; Semi-bold 600 italic; Bold 700;
+Bold 700 italic; Black 900; Black 900 italic;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Serif Pro', serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #343F4F;
+}
+
+.wrapper {
+    height: 120px;
+    min-width: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFF;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.wrapper span {
+    width: 100%;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.wrapper span.num {
+    font-size: 50px;
+    border-right: 2px solid rgba(0, 0, 0, .2);
+    border-left: 2px solid rgba(0, 0, 0, .2);
+    pointer-events: none;
+}
+
+
+.wrapper span.minus {
+    user-select: none;
+}
+
+.wrapper span.minus:active {
+    color: darkblue;
+}
+
+
+.wrapper span.plus {
+    user-select: none;
+}
+
+.wrapper span.plus:active {
+    color: darkblue;
+}
